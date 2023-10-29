@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:CINEMA"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Окно авторизации" Height="450" Width="800" MaxWidth="800" MinWidth="800"  MaxHeight="450" MinHeight="450"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Привет,мы знакомы?" VerticalAlignment="Top" Margin="0,35,0,0" FontWeight="Bold" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Привет,мы знакомы?" VerticalAlignment="Top" Margin="0,35,0,0" FontWeight="Bold" FontSize="30" Foreground="#698AFF"/>
 
         <Button HorizontalAlignment="Left" Style="{StaticResource MaterialDesignFlatDarkBgButton}" FontSize="15"  Background="#698AFF" Content="Войти" Width="141" RenderTransformOrigin="-1.516,0.829" Margin="180,329,0,38" Click="Button_Enter">
             <Button.Resources>
@@ -30,7 +31,7 @@
 
             <TextBox x:Name="TextBoxLog" Padding="10" materialDesign:HintAssist.Hint="Логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
             <PasswordBox x:Name="TextBoxPass" Padding="10" materialDesign:HintAssist.Hint="Пароль" Style="{StaticResource MaterialDesignFilledPasswordBox}"/>
-            <TextBox x:Name="TextBoxEmail" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+            <TextBox x:Name="TextBoxEmail" Padding="10" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
 
 
         </StackPanel>

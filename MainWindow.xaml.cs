@@ -43,7 +43,10 @@ namespace CINEMA
             }
             else
             {
-                MessageBox.Show("всё ОК");
+                ControlPanel controlPanel = new ControlPanel();
+                Hide();
+                controlPanel.ShowDialog();
+                Show();
 
             }
 
@@ -51,6 +54,7 @@ namespace CINEMA
 
         private void Button_Enter(object sender, RoutedEventArgs e)
         {
+            
 
         }
 
